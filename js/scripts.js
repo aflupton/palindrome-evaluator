@@ -30,3 +30,17 @@ var ifItPalindrome = function(arr){
 };
 
 // UI logic
+function primeNumber(num) {
+  var arr = [];
+  for (var i = 0; i < num; i++) {
+    arr[i]=true;
+  }
+  for (var i = 2; i < Math.sqrt(num); i++){
+    if (arr[i]) {
+      for(var j = i^2; j < num; j += i) {
+        arr[j] = false;
+      }
+    }
+  }
+
+}

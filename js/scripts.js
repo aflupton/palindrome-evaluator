@@ -1,4 +1,4 @@
-var ifItPolindrome = function(arr){
+var ifItPalindrome = function(arr){
     if (arr.length % 2 != 0){
       var middle = arr[arr.length/2].split("");
       if (middle.length % 2 != 0){
